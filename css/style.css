@@ -189,7 +189,7 @@
       
       /* Modo mágico activado */
       body.magic-mode {
-        background: linear-gradient(135deg, #9500ff, #ff69b4, #ffd000);
+        /*background: linear-gradient(135deg, #9500ff, #ff69b4, #ffd000);*/
         color: rgb(0, 26, 255);
       }
       
