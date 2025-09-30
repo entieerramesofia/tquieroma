@@ -3,7 +3,7 @@
 
   body {
 
-    background-image: url("file:///Users/sofiajonguitud/Desktop/IMG_8558.jpg");
+    background-image: url("img/fon.jpg");
     background-size: cover;      /* hace que la imagen se ajuste */
     background-repeat: no-repeat; /* evita que se repita */
     background-position: center;  /* centra la imagen */
@@ -12,6 +12,7 @@
 
     color: rgb(0, 26, 255);
     
+  
     
     /*color: #00000000;
     transition: all 0.5s ease;
