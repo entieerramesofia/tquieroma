@@ -1,0 +1,11 @@
+
+
+body {
+    background-image: url("file:///Users/sofiajonguitud/Desktop/IMG_8558.jpg");
+    background-size: cover;      /* hace que la imagen se ajuste */
+    background-repeat: no-repeat; /* evita que se repita */
+    background-position: center;  /* centra la imagen */
+    margin: 0; /* elimina márgenes por defecto */
+    height: 100vh; /* ocupa toda la pantalla */
+  }
+  
