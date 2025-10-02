@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>こんにちは | tquieroma </title>
+ 
+    
+  <meta name="apple-mobile-web-app-title" content="tquieroma" />
 
-  <!-- SEO / Redes sociales (dejé tu código original, lo recorté por espacio) -->
-  <meta name="title" content="tquieroma- desarrolladora Web, Diseñadora transmedia y Tecnóloga Creativa">
-  <meta name="description" content="es una marca especializada en el diseño transmedia, digital y tradicional, asimismo crea un espacio para exponer experiencias digitales innovadoras a través de tecnologías experimentales.">
+      <!-- Metadatos básicos para SEO y redes sociales -->
+      <meta name="title"                      content=" tquieroma- desarrolladora Web, Diseñadora transmedia y Tecnóloga Creativa">
+      <meta name='image'                      content='https://entieerramesofia.github.io/entieerramesofia/img/cuadro.png'>
+      <meta name='description'                content='es una marca especializada en el diseño transmedia, digital y tradicional, asimismo crea un espacio para exponer experiencias digitales innovadoras a través de tecnologías experimentales.'>
+      <meta name='keywords'                   content='fullstack, desarrollador web, tipografía, webgl'>
+      <link rel="canonical"                   href="https://entieerramesofia.github.io/entieerramesofia/">
+      
+      <!-- 
+       @meta: OpenGraph
+       @desc: El protocolo Open Graph permite que pueda mostrarse en redes sociales una previsualización en formato de tarjeta
+       @see: https://ogp.me/
+      -->
+      <meta property="og:site_name"           content="tquiero.ma" />
+      <meta property="og:locale"              content="ma"/>
+      <meta property='og:type'                content='website'>
+      <meta property='og:title'               content='marca mexicana de diseño transmedia'>
+      <meta property='og:image'               content='https://entieerramesofia.github.io/entieerramesofia/img/cuadro.png'>
+      <meta property="og:image:type"          content="image/png"/>
+      <meta property="og:image:width"         content="1280"/>
+      <meta property="og:image:height"        content="640"/>
+      <meta property='og:image'               content='https://juanfuent-es.github.io/juanfuent-es/img/juanfuent.es-wa.png' itemprop="image">
+      <meta property='og:description'         content='es una marca especializada en el diseño transmedia, digital y tradicional, asimismo crea un espacio para exponer experiencias digitales innovadoras a través de tecnologías experimentales.'>
+      <meta property="og:url"                 content="https://juanfuent-es.github.io/juanfuent-es/">
+  
+     <!-- 
+     @link: favicon
+     @desc: Define el icono del sitio web que se mostrará en la pestaña del navegador
+    -->
+    
+    <!--
+     @metadata: Twitter Cards (Tarjetas de Twitter/X)
+     @desc: Con las tarjetas de X, puedes adjuntar fotos, videos y experiencias multimedia enriquecidas a los tweets, ayudando a dirigir tráfico a tu sitio web.
+     @see: https://developer.x.com/en/docs/x-for-websites/cards/overview/markup
+    -->
+    <meta property="twitter:card"           content="summary_large_image">
+    <meta property="twitter:url"            content="https://juanfuent-es.github.io/juanfuent-es/">
+    <meta property="twitter:title"          content="Desarrollador Web y Tecnólogo Creativo">
+    <meta property="twitter:description"    content="Especializado en experiencias digitales innovadoras a través de tecnologías web experimentales, asegurando soluciones de aplicaciones web escalables y personalizadas.">
+    <meta property="twitter:image"          content="https://juanfuent-es.github.io/juanfuent-es/img/juanfuent-es.og-img.png">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> こんにちは | tquieroma </title>
 
   <!-- Google Fonts -->
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="img/site.webmanifest" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Coral+Pixels&family=Dokdo&family=Lacquer&family=Lexend:wght@100..900&family=Rock+3D&display=swap" rel="stylesheet">
+
+
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Tu CSS -->
   <link rel="stylesheet" href="./css/style.css">
-
-  <style>
-    /* cuando se active el modo mágico */
-    body.magic-mode {
-      background: url("./img/fon.jpg") no-repeat center center fixed;
-      background-size: cover;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -35,16 +76,18 @@
           <li><a class="nav-link" href="./index.html">home</a></li>
           <li><a class="nav-link" href="./contactoyop.html">contacto</a></li>
          
-          <li> 
-            <button class="nav-link" id="eye-toggle-btn">
-              <i class="fa-regular fa-eye"></i>
-            </button>
-          </li>
-          <li>
-            <button class="nav-link" id="wand-toggle-btn">
-              <i class="fa-regular fa-wand-magic-sparkles"></i>
-            </button>
-          </li>
+
+     <li> 
+      <button class="nav-link" id="eye-toggle-btn">
+        <i class="fa-regular fa-eye"></i>
+      </button>
+    </li>
+    <li>
+      <button class="nav-link" id="wand-toggle-btn">
+        <i class="fa-regular fa-wand-magic-sparkles"></i>
+      </button>
+    </li>
+
         </ul>
       </nav>
   </header>
@@ -52,5 +95,67 @@
   <main>
     <section>
       <h1>T QUIERO MA Y YO</h1>
+      ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱ ⏔⏔⏔ ꒰ ᧔ෆ᧓ ꒱
       <p>.☘︎ ݁˖ proyecto creado por Sofia Jonguitud, estudiante de Computación Creativa .☘︎ ݁˖</p>
-      <p>esta es una <b>marca mexicana especializada en el diseño transmedia</b>, creando un espacio no solo para la autora, sino para todo aquel que quiera formar parte en exponer novedosas experiencias digitales así como tradicionales a través de tecnologías experimentales, hola
+
+      <p>esta es una <b>marca mexicana especializada en el diseño transmedia</b>, creando un espacio no solo para la autora, sino para todo aquel que quiera formar parte en exponer novedosas experiencias digitales así como tradicionales a través de tecnologías experimentales, holamundo.</p> 
+  
+      <P>⤷ eStá EN cOnstRucc10n, no molestar゛ ˎˊ˗ </P>
+      <p>
+        Loremimpsumloremisnidd...esto es unaprfuebapornoestarcontigoentusbatallas
+      </p>
+
+      <article>
+        <h2>miau</h2>
+        <p>OTRO CACHO QUE TENGO QUE RESOLVER</p>
+        <ul>
+          <li><code>header</code>: encabezado de la página</li>
+          <li><code>nav</code>: navegación</li>
+          <li><code>main</code>: contenido principal</li>
+          <li><code>article</code>: artículo</li>
+          <li><code>section</code>: sección</li>
+          <li><code>footer</code>: pie de página</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>más descripción ayuda</h2>
+        <p>CSS es un lenguaje de hojas de estilo que se utiliza para dar diseño a las páginas web.</p>
+      </article>
+    </section>
+  </main>
+
+
+  <p>
+    <a href="https://www.instagram.com/entieerramesofiapt.2/" target="_blank" title="instagram creadxr :3U-U">instagram</a>
+    
+    <a href="mailto:input@entieerramesofia" title="escríbeme por email">instagram</a>
+    
+    <a href="tel: 5531156033" title= "llámame y cuéntame tus ideas"</a>
+    
+    <img src="https://pbs.twimg.com/media/GjWfOC-WEAAEtED?format=png&name=900x900">
+    
+    
+        <a href="https://pbs.twimg.com/media/GjWfOC-WEAAEtED?format=png&name=900x900" target ="_blank" tittle="no veas"</a>
+    
+        
+  <footer>
+    <p>
+      tquieromamáperdónpornohabertecomprendido,pornoestarcontigoentusbatallas
+      yoséqueerassolounaniñaperoaúnasítequierodarlasgraciasportodo<3| t quiero ma 2025
+    </p>
+  </footer>
+
+  <!-- Tu JS -->
+  <script src="./js/app.js">
+
+
+ document.getElementById("magic-btn").addEventListener("click", () => {
+      document.body.classList.toggle("magic-mode");
+    });
+
+  </script>
+</body>
+</html>
+
+
