@@ -3,17 +3,17 @@
 
   body {
 
-    background-image: url("img/fon.jpg");
-    background-size: cover;      /* hace que la imagen se ajuste */
-    background-repeat: no-repeat; /* evita que se repita */
-    background-position: center;  /* centra la imagen */
-    margin: 0; /* elimina márgenes por defecto */
-    height: 100vh; /* ocupa toda la pantalla */
-
-    color: rgb(0, 26, 255);
     
-  
-    
+   
+      background-image: url("file:///Users/sofiajonguitud/Desktop/fon.jpg");
+      background-size: cover;       /* que cubra todo el fondo */
+      background-position: center;  /* centrada */
+      background-repeat: no-repeat; /* sin repetirse */
+      height: 250vh;                /* ocupa toda la pantalla */
+      margin: 2;
+      padding: 8;
+   
+      
     /*color: #00000000;
     transition: all 0.5s ease;
         /*color: rgba(255,255,255, .9);
@@ -23,13 +23,19 @@
         font-style: normal;*/
     }
     
+    .libre-barcode-39-extended-text-regular {
+      font-family: "Libre Barcode 39 Extended Text", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
     
     .nav-link {
     
     /*font-family: "Rock 3D", serif;*/
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Libre Barcode 39 Extended Text", sans-serif;
     
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     /*padding: 40 px;
     border: 4px solid #020070;
@@ -42,14 +48,7 @@
     
      
     
-    h3, h2, ul, h1, title {
-    
-        font-family: "Archivo Black", sans-serif;
-        font-weight: 400;
-    
-      }
-      
-    
+  
     /*body.dark-mode .nav-link {
     
     background-color: #7aa8ffa7;
@@ -68,7 +67,7 @@
     
     
     .nav-link:visited {
-    color: #ff006ae2
+    color: rgb(0, 255, 30);
     transition: 0.5s ease;   
     
     }
@@ -82,23 +81,25 @@
     }
     */
     
-    h2
-    {
+    h1 {
+    
+    
+      
+  
+    }
+
+    h2 {
     font-size: 32px;
     color: #ff0000;
     
     }
     
-    p
-    {
+    p {
         color: #ff0000;
-    
             font-family: "Lacquer", system-ui;
             font-weight: 400;
             font-style: normal;
-          
-          
-        font-size: 30px;
+            font-size: 30px;
     }
     
     a {
@@ -115,12 +116,10 @@
     list-style: none;
     text-align: left;
     /*content: "✮⋆˙";
-    margin-right: 6px;
-    color: hotpink;*/
-    }
-    
+    margin-right: 6px;*/
+    color: rgb(248, 111, 179);
       
-    /* Modo claro por defecto */
+    /* no supe cómo acomodarlo pero es modo claro por defecto */
     
     
       button.nav-link {
@@ -136,9 +135,10 @@
       button.nav-link:hover i {
         color: #ffcc00;  /* ejemplo: dorado al pasar el mouse */
       }
-    
+    } /*para que sean rosa las opciones*/
+
       head {
-        background-color: rgb(33, 0, 54);
+        background-color: rgb(157, 0, 255);
         transition: background 0.3s, color 0.3s;
         font-style: rgb(150, 23, 23);
     
@@ -157,41 +157,34 @@
       footer {
         position: fixed;
         bottom: 0;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(to top, rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.4));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        color: #fff;
+        right: 0;
+        width: 40%;
+        background: linear-gradient(to top, rgba(255, 80, 226, 0.85), rgb(251, 255, 1));
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(5px);
+        color: #0bc63d;
         text-align: left;
         padding: 1rem;
         z-index: 1000;
         /*border-top: 1px solid rgba(255, 255, 255, 0.15);*/
         font-size: 0.9rem;
-        line-height: 1.4;
+        line-height: 1.5;
       }
       
       footer p {
         /*margin: 0;*/
-        padding: 0 1rem;              /* espacio lateral */
+        padding: 0 0.8rem;              /* espacio lateral */
         word-wrap: break-word;        /* por si el texto es larguísimo */
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.5); /* glow suave */
-      }
+        text-shadow: 0 0 3px rgba(255, 57, 57, 0.5); /* glow suave */
+        font-size: 19px;
+
       
-      main {
-        padding-bottom: 80px; /* espacio para el footer */
      
-        width: 80%;
-        margin: 0 auto;
-    
-    }
-      /* Estilos por defecto */
-    
+  } 
       
-      /* Modo mágico activado */
       body.magic-mode {
-        /*background: linear-gradient(135deg, #9500ff, #ff69b4, #ffd000);*/
-        color: rgb(0, 26, 255);
+        background: linear-gradient(135deg, #9500ff, #ff69b4, #ffd000);
+        color: rgb(0, 255, 34);
       }
       
       body.magic-mode a,
@@ -200,7 +193,7 @@
       body.magic-mode p,
       body.magic-mode li {
         color: #043a0c; /* asegura que todo el texto sea visible */
-        text-shadow: 0 0 8px rgba(29, 4, 93, 0.7); /* glow mágico */
+        text-shadow: 0 0 8px rgba(200, 255, 0, 0.7); /* glow mágico */
       }
       
       /* Capa del destello */
@@ -210,7 +203,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+        background: radial-gradient(circle, rgba(255, 235, 235, 0.9) 0%, rgba(255,255,255,0) 70%);
         opacity: 0;
         pointer-events: none;
         z-index: 2000;
@@ -224,18 +217,18 @@
         100% { opacity: 0; transform: scale(2); }
       }
     
-      footer, footer * {
-        color: #ff37a8 !important;
+footer, footer * {
+        color: #ff54b5 !important;
       }
     
     
-      /* Quitar los bullets */
+      /* quitar los bullets */
     nav ul {
         list-style: none;
-        margin: 0;
-        padding: 0;
+        margin: 1;
+        padding: 4;
         display: flex;
-        gap: 1.2rem; /* espacio entre items */
+        gap: 3.0rem; /* espacio entre items */
       }
       
       nav li {
@@ -244,10 +237,11 @@
       
       /* Íconos antes de los links */
       nav li a::before {
-        content: "✮⋆˙";    
+        content: "✮⋆˙";  
+        content: "☘︎ ݁˖";   
         font-weight: 900;
-        margin-right: 6px;
-        color: crimson; /* color del icono */
+        margin-right: 9px;
+        color: rgb(248, 111, 179); /* color del icono */
       }
       
       /* Icono para HOME */
@@ -256,10 +250,10 @@
       
       /* Icono para CONTACTO */
       nav li:nth-child(2) a::before {
-        content: "☘︎ ݁˖";    /* fa-envelope */
-      }
+        content: "☘︎ ݁˖";  } /* fa-envelope */
+       
       
-      /* Los botones (ojo y varita) no necesitan bullets */
+      /* los botones (ojo y varita) no necesitan bullets */
       nav button {
         background: none;
         border: none;
