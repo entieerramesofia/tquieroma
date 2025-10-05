@@ -10,11 +10,9 @@
       background-position: center;  /* centrada */
       background-repeat: no-repeat; /* sin repetirse */
       height: 250vh;                /* ocupa toda la pantalla */
-      margin: 2;
-      padding: 8;
    
       
-    /*color: #00000000;
+    /*color: #00000000; 
     transition: all 0.5s ease;
         /*color: rgba(255,255,255, .9);
         /* AQUÍ SE LISTAN LAS PROPIEDADES 
@@ -23,6 +21,13 @@
         font-style: normal;*/
     }
     
+
+    .codystar-regular {
+      font-family: "Codystar", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
     .libre-barcode-39-extended-text-regular {
       font-family: "Libre Barcode 39 Extended Text", system-ui;
       font-weight: 400;
@@ -45,9 +50,6 @@
     transition: all 0.8s ease;
     
     }
-    
-     
-    
   
     /*body.dark-mode .nav-link {
     
@@ -83,23 +85,84 @@
     
     h1 {
     
-    
-      
+      margin: 5;
+      padding: 8;
+      font-family: "Libre Barcode 39 Extended Text", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 50px;
+
+   
   
     }
 
+    .titulo-principal {
+
+      font-size: 3.5rem;              /* tamaño inicial */
+      text-align: center;
+      transition: all 0.9s ease;      /* animación suave */
+      color: #ff0000;                    
+      cursor: default;  
+      }/* cursor normal */
+
+
+      .titulo-principal:hover {
+        font-size: 5.2rem; 
+        text-align: center;
+        /* aumenta de tamaño */
+        text-shadow: 0 0 15px rgb(255, 255, 237),
+                     0 0 30px rgb(0, 4, 255); /* brillo */
+        color: #ff3ee5;                 /* cambia de tono */
+      }
+
+    p1 {
+    
+      color: #00ff08;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      font-size: 16px;
+
+    }
+
+
+    p2 {
+    
+      font-family: "Codystar", sans-serif;
+      color: #ffffff;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      font-size: 25px;
+
+  
+    }
+
+
+
+
+    
     h2 {
     font-size: 32px;
     color: #ff0000;
-    
+    text-align: center;
+
     }
+
+
+.lexend-uniquifier {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
     
     p {
-        color: #ff0000;
-            font-family: "Lacquer", system-ui;
+      color: #ff0000;
+      font-family: "Lexend", sans-serif;
             font-weight: 400;
             font-style: normal;
-            font-size: 30px;
+            font-size: 25px;
     }
     
     a {
@@ -109,6 +172,12 @@
     text-transform: uppercase;
     }
     
+     li3 {
+    font-weight: 900;
+    color: #ffb700;
+    
+    text-transform: uppercase;
+    }
     
     
     
@@ -121,22 +190,35 @@
       
     /* no supe cómo acomodarlo pero es modo claro por defecto */
     
-    
-      button.nav-link {
-        background: none;       /* sin fondo */
-        border: none;           /* sin borde */
-        padding: 0;             /* sin padding extra */
-        cursor: pointer;
-        font-size: 1.2rem;      /* tamaño de icono */
-        color: inherit;         /* hereda el color del texto */
-      }
-      
       /* Hover: cambia color pero sin fondo */
-      button.nav-link:hover i {
-        color: #ffcc00;  /* ejemplo: dorado al pasar el mouse */
-      }
+    
     } /*para que sean rosa las opciones*/
 
+    button.nav-link {
+      background: none;       /* sin fondo */
+      border: none;           /* sin borde */
+      padding: 0;             /* sin padding extra */
+      cursor: pointer;
+      font-size: 1.5rem;      /* tamaño de icono */
+      color: inherit;   
+      font-size: 29px;
+    }
+
+    .nav-link
+    .nav-link3 {
+      background: none;       /* sin fondo */
+      border: none;           /* sin borde */
+      padding: 0;             /* sin padding extra */
+      cursor: pointer;
+      font-size: 1.5rem;      /* tamaño de icono */
+      color: inherit;   
+      font-size: 29px;
+    }
+
+    button.nav-link:hover 
+    /*button.nav-link3:hover*/ {
+      color: #ffcc00;  /* ejemplo: dorado al pasar el mouse */
+    }
       head {
         background-color: rgb(157, 0, 255);
         transition: background 0.3s, color 0.3s;
@@ -262,3 +344,4 @@ footer, footer * {
         color: inherit;
       }
       
+     
