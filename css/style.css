@@ -230,11 +230,7 @@
         text-shadow: 0 0 3px rgba(255, 57, 57, 0.5); /* glow suave */
         font-size: 17px;
         line-height: 1.5;
-
-
-      
-     
-  } 
+      } 
       
       body.magic-mode {
         background: linear-gradient(135deg, #9500ff, #ff69b4, #ffd000);
@@ -250,7 +246,7 @@
         text-shadow: 0 0 8px rgba(200, 255, 0, 0.7); /* glow mágico */
       }
       
-      /* Capa del destello */
+      /* capa del destello */
     .magic-flash {
         position: fixed;
         top: 0;
