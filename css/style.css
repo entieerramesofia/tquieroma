@@ -9,7 +9,7 @@
       background-size: cover;       /* que cubra todo el fondo */
       background-position: center;  /* centrada */
       background-repeat: no-repeat; /* sin repetirse */
-      height: 250vh;                /* ocupa toda la pantalla */
+      height: cover;                /* ocupa toda la pantalla */
    
       
     /*color: #00000000; 
@@ -21,6 +21,13 @@
         font-style: normal;*/
     }
     
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 40
+    }
 
     .codystar-regular {
       font-family: "Codystar", sans-serif;
@@ -37,12 +44,10 @@
     
     .nav-link {
     
-    /*font-family: "Rock 3D", serif;*/
     font-family: "Libre Barcode 39 Extended Text", sans-serif;
-    
     font-weight: 400;
     font-style: normal;
-    /*padding: 40 px;
+    /*padding: 40 px; (característacas para ponerle)
     border: 4px solid #020070;
     border-radius: 10 px;
     margin: 10 px; */
@@ -50,38 +55,6 @@
     transition: all 0.8s ease;
     
     }
-  
-    /*body.dark-mode .nav-link {
-    
-    background-color: #7aa8ffa7;
-    color:rgb(255, 0, 208);
-    transition: all 0.8s ease;
-    
-    }*/
-    
-    
-    .nav-link:hover {
-    color: rgb(255, 100, 255);
-    transition: 0.5s ease;   
-    /*background-color: #7aa8ffa7; */
-    }
-    
-    
-    
-    .nav-link:visited {
-    color: rgb(0, 255, 30);
-    transition: 0.5s ease;   
-    
-    }
-    
-    /*
-    {
-    font-size: 64px;
-    text-align: center;
-    font-style: black;
-    
-    }
-    */
     
     h1 {
     
@@ -112,33 +85,44 @@
         /* aumenta de tamaño */
         text-shadow: 0 0 15px rgb(255, 255, 237),
                      0 0 30px rgb(0, 4, 255); /* brillo */
-        color: #ff3ee5;                 /* cambia de tono */
-      }
+        color: rgb(111, 230, 248); /* color del icono */
+    }
 
     p1 {
-    
+      display: block;
+      text-align: center;
+      margin: 20px auto;
       color: #00ff08;
       font-weight: 400;
       font-style: normal;
-      text-align: center;
       font-size: 16px;
 
     }
 
 
     p2 {
-    
+      display: block;
+      text-align: center;
       font-family: "Codystar", sans-serif;
-      color: #ffffff;
+      color: #00ff08;
       font-weight: 400;
       font-style: normal;
-      text-align: center;
-      font-size: 25px;
+      font-size: 1.2rem;              /* tamaño inicial */
 
   
     }
 
 
+    p2:hover {
+      transition: all 0.9s ease;      /* animación suave */
+      font-size: 1.7rem; 
+
+      text-align: center;
+      /* aumenta de tamaño */
+      text-shadow: 0 0 15px rgb(255, 255, 237),
+                   0 0 30px rgb(0, 4, 255); /* brillo */
+                   color: #003c21;
+    }
 
 
     
@@ -153,7 +137,7 @@
 .lexend-uniquifier {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 300;
   font-style: normal;
 }
     
@@ -161,14 +145,13 @@
       color: #ff0000;
       font-family: "Lexend", sans-serif;
             font-weight: 400;
-            font-style: normal;
             font-size: 25px;
+
     }
     
     a {
     font-weight: 900;
     color: #ff0000;
-    
     text-transform: uppercase;
     }
     
@@ -180,19 +163,6 @@
     }
     
     
-    
-    main-header {
-    list-style: none;
-    text-align: left;
-    /*content: "✮⋆˙";
-    margin-right: 6px;*/
-    color: rgb(248, 111, 179);
-      
-    /* no supe cómo acomodarlo pero es modo claro por defecto */
-    
-      /* Hover: cambia color pero sin fondo */
-    
-    } /*para que sean rosa las opciones*/
 
     button.nav-link {
       background: none;       /* sin fondo */
@@ -205,7 +175,7 @@
     }
 
     .nav-link
-    .nav-link3 {
+    /*.nav-link3*/ {
       background: none;       /* sin fondo */
       border: none;           /* sin borde */
       padding: 0;             /* sin padding extra */
@@ -216,10 +186,11 @@
     }
 
     button.nav-link:hover 
-    /*button.nav-link3:hover*/ {
+    .nav-link:hover*/ {
       color: #ffcc00;  /* ejemplo: dorado al pasar el mouse */
     }
-      head {
+
+    head {
         background-color: rgb(157, 0, 255);
         transition: background 0.3s, color 0.3s;
         font-style: rgb(150, 23, 23);
@@ -240,25 +211,26 @@
         position: fixed;
         bottom: 0;
         right: 0;
-        width: 40%;
+        width: 50%;
         background: linear-gradient(to top, rgba(255, 80, 226, 0.85), rgb(251, 255, 1));
-        backdrop-filter: blur(9px);
-        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
         color: #0bc63d;
         text-align: left;
         padding: 1rem;
         z-index: 1000;
         /*border-top: 1px solid rgba(255, 255, 255, 0.15);*/
         font-size: 0.9rem;
-        line-height: 1.5;
       }
       
       footer p {
         /*margin: 0;*/
-        padding: 0 0.8rem;              /* espacio lateral */
+        padding: 0 0.5rem;              /* espacio lateral */
         word-wrap: break-word;        /* por si el texto es larguísimo */
         text-shadow: 0 0 3px rgba(255, 57, 57, 0.5); /* glow suave */
-        font-size: 19px;
+        font-size: 17px;
+        line-height: 1.5;
+
 
       
      
@@ -303,45 +275,56 @@ footer, footer * {
         color: #ff54b5 !important;
       }
     
-    
-      /* quitar los bullets */
-    nav ul {
+    /*ZONA DE ARRIBA ÍCONOS, HOME, CONTACTO, ETC*/
+    nav ul {   /* quitar los bullets */
         list-style: none;
         margin: 1;
         padding: 4;
         display: flex;
         gap: 3.0rem; /* espacio entre items */
+        font-size: 25px;
+
       }
       
       nav li {
         position: relative;
       }
       
-      /* Íconos antes de los links */
-      nav li a::before {
-        content: "✮⋆˙";  
-        content: "☘︎ ݁˖";   
+      /* íconos antes de los links */
+      nav li a::before
+      nav li a::after {
+    
         font-weight: 900;
-        margin-right: 9px;
+        margin-right: 2px;
         color: rgb(248, 111, 179); /* color del icono */
+        cursor: pointer;
+
       }
       
-      /* Icono para HOME */
+      /* icono para HOME */
       nav li:first-child a::before {
         content: "✮⋆˙";  }
       
-      /* Icono para CONTACTO */
+      /* icono para CONTACTO */
       nav li:nth-child(2) a::before {
         content: "☘︎ ݁˖";  } /* fa-envelope */
-       
+            /* icono para otro */
+      nav li:nth-child(3) a::before {
+        content: "⚘⚘";  } /* fa-envelope */
+        nav li:nth-child(3) a::after {
+        content: "⚘⚘";  } /* fa-envelope */
       
-      /* los botones (ojo y varita) no necesitan bullets */
-      nav button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        font-size: 1.2rem;
-        color: inherit;
-      }
       
-     
+.nav-link {
+  color: #ff4bf7; /* cambia el color del texto */
+  display: inline-block;
+  transition: all 0.4s ease;
+  
+}
+
+.nav-link:hover {
+  color: #57ff4b; /* cambia el color del texto */
+  transform: scale(1.2); /* agranda un poco el tamaño */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 25px rgb(0, 225, 255); /* brillo */
+}
