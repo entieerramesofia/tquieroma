@@ -4,8 +4,9 @@
   body {
 
     
-   
-      background-image: url("file:///Users/sofiajonguitud/Desktop/fon.jpg");
+    background-image: url('img/fon22.jpg');
+
+      /*background-image: url("file:///Users/sofiajonguitud/Desktop/fon.jpg");*/
       background-size: cover;       /* que cubra todo el fondo */
       background-position: center;  /* centrada */
       background-repeat: no-repeat; /* sin repetirse */
