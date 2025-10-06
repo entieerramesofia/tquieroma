@@ -20,6 +20,28 @@
         font-weight: 400;
         font-style: normal;*/
     }
+
+
+
+.bitcount-prop-single-ink-uniquifier {
+  font-family: "Bitcount Prop Single Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+
+
     
     .material-symbols-outlined {
       font-variation-settings:
@@ -64,9 +86,6 @@
       font-weight: 400;
       font-style: normal;
       font-size: 50px;
-
-   
-  
     }
 
     .titulo-principal {
@@ -343,18 +362,18 @@ footer, footer * {
 .p4, .p5 {
   display: block;
   text-align: left;
-  font-family: "Lexend", sans-serif;
+  font-family: "Bitcount Prop Single Ink", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #ff3ee5;
+  color: #ff3e3e;
   font-size: 18px;
-  margin-top: 1rem;
+  margin-top: 4rem;
   transition: all 0.3s ease;
 }
 
 .p4:hover, .p5:hover {
-  color: #ffd000;
+  color: #00ff6e;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
   transform: scale(1.05);
 }
